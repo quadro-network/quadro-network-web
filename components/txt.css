@@ -1,0 +1,57 @@
+.section1-title {
+  text-align: center;
+  margin-bottom: 65px; /* Убедитесь, что отступ снизу есть */
+  padding-top: 5px; /* Убедитесь, что отступ сверху есть */
+}
+
+.section1-title h6 {
+  font-size: 1.5em; /* Убедитесь, что размер шрифта подходящий */
+  margin: 0;
+}
+
+.client-logo-area .row {
+  display: flex;
+  justify-content: center;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(105, 105, 105, 0.473); /* серый фон с прозрачностью */
+  color: black; /* черный текст */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  backdrop-filter: blur(5px); /* блюр */
+  visibility: hidden; /* Скрыть элемент изначально */
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto; /* Автоматическая высота для мобильных устройств */
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-main-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-overlay {
+    width: 90%; /* Уменьшение ширины для мобильных устройств */
+    padding: 10px; /* Уменьшение отступов для мобильных устройств */
+    font-size: 0.9em; /* Уменьшение размера шрифта */
+  }
+
+  .section1-title {
+    margin-bottom: 30px; /* Уменьшение отступов */
+    padding-top: 10px;
+  }
+
+  .section1-title h6 {
+    font-size: 1.2em; /* Уменьшение размера шрифта */
+  }
+}
